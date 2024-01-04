@@ -1,0 +1,10 @@
+{
+    "prettier.tabWidth": 4,
+    "prettier.vueIndentScriptAndStyle": true,
+    "vs-code-prettier-eslint.prettierLast": true,
+    "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
+    "eslint.codeActionsOnSave.rules": null,
+    "files.eol": "\r\n",
+    "editor.codeActionsOnSave": { "source.fixAll": true },
+    "editor.formatOnSave": false
+}

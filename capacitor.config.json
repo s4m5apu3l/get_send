@@ -1,8 +1,8 @@
 {
-  "appId": "com.example.app",
-  "appName": "jetsend",
-  "webDir": "www",
-  "server": {
-    "androidScheme": "https"
-  }
+    "appId": "com.example.app",
+    "appName": "jetsend",
+    "webDir": "dist",
+    "server": {
+        "androidScheme": "https"
+    }
 }

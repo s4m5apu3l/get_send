@@ -1,23 +1,34 @@
 {
-  "name": "jetsend",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@capacitor/cli": "^5.6.0",
-    "nuxt": "^3.9.0",
-    "vue": "^3.4.3",
-    "vue-router": "^4.2.5"
-  },
-  "dependencies": {
-    "@capacitor/android": "^5.6.0",
-    "@capacitor/core": "^5.6.0",
-    "@capacitor/ios": "^5.6.0"
-  }
+    "name": "jetsend",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+        "lint:prettier": "prettier --check .",
+        "lint": "npm run lint:js && npm run lint:prettier",
+        "lintfix": "prettier --write --list-different . && npm run lint:js --fix"
+    },
+    "devDependencies": {
+        "@capacitor/cli": "^5.6.0",
+        "@nuxtjs/eslint-config-typescript": "^12.1.0",
+        "@typescript-eslint/parser": "^6.17.0",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.2",
+        "nuxt": "^3.9.0",
+        "prettier": "^3.1.1",
+        "typescript": "^5.3.3",
+        "vue": "^3.4.3",
+        "vue-router": "^4.2.5",
+        "vue-tsc": "^1.8.27"
+    },
+    "dependencies": {
+        "@capacitor/android": "^5.6.0",
+        "@capacitor/core": "^5.6.0",
+        "@capacitor/ios": "^5.6.0"
+    }
 }
